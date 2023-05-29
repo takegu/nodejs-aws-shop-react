@@ -1,0 +1,9 @@
+{
+  "app": "npx ts-node --esm --prefer-ts-exts cdk.ts",
+  "watch": {
+    "include": [
+      "cdk.ts"
+    ]
+  },
+  "context": {}
+}
