@@ -1,5 +1,5 @@
 const API_PATHS = {
-  product: "https://.execute-api.eu-west-1.amazonaws.com/",
+  product: "https://4pocqddhaf.execute-api.eu-west-1.amazonaws.com",
   order: "https://.execute-api.eu-west-1.amazonaws.com/dev",
   import: "https://vaa4ihg2mb.execute-api.eu-west-1.amazonaws.com",
   bff: "https://4pocqddhaf.execute-api.eu-west-1.amazonaws.com",
