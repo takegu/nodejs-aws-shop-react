@@ -25,6 +25,7 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
 
   const uploadFile = async () => {
     console.log("uploadFile to", url);
+    const authorization_token = localStorage.getItem('authorization_token');
 
     if(file) {
       // Get the presigned URL
@@ -33,6 +34,9 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
         url,
         params: {
           name: encodeURIComponent(file.name),
+        },
+        headers: {
+          authorization: authorization_token ? `Basic ${authorization_token}` : '',
         },
       });
       console.log("File to upload: ", file.name);
